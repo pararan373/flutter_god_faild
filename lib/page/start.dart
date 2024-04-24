@@ -17,6 +17,7 @@ class  _StartState extends State<Start> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Stack( 
               children: [
