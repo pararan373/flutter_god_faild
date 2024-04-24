@@ -16,28 +16,24 @@ class  _StartState extends State<Start> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
+        child: Stack( 
           children: [
-            Stack( 
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                    color: Colors.black,
-                    width: 3,
-                    )   
-                  ),
-                  width: 400,
-                  height: 400,
-                  child: Image.asset('assets/images/background_pig.png'),
-                ),
-                Container(
-                  padding: EdgeInsets.all(20),
-                  child: Image.asset('assets/images/logo.png')
-                ),
-              ],
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                color: Colors.black,
+                width: 3,
+                )   
+              ),
+              width: 400,
+              height: 400,
+              child: Image.asset('assets/images/background_pig.png'),
             ),
-          ],//レイヤー
+            Container(
+              padding: EdgeInsets.all(20),
+              child: Image.asset('assets/images/logo.png')
+            ),
+          ],
         ),
       ),
     );
