@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'page/start.dart';
-
 void main() {
   //　一旦おまじないとしてスルーしてもらって大丈夫です
   WidgetsFlutterBinding.ensureInitialized();
