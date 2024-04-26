@@ -1,0 +1,20 @@
+{
+    "ハチェット":{
+        "id"     :1,
+        "name"   :"ハチェット",
+        "type"   :"buki",
+        "value"  :4,
+        "money"  :2,
+        "rarity" :1
+        },
+        
+    "ゴーストソード":{
+        "id"     :2,
+        "name"   :"ゴーストソード",
+        "type"   :"buki",
+        "subtype":"takeHP",
+        "value"  :7,
+        "money"  :1
+        }
+
+ }
