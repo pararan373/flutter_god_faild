@@ -1,7 +1,10 @@
 import 'dart:js';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/main.dart';
+import 'package:flutter_application_1/page/buttle.dart';
+import 'package:go_router/go_router.dart';
 
 class Start extends StatefulWidget {
   @override
@@ -11,8 +14,10 @@ class Start extends StatefulWidget {
 class _StartState extends State<Start> {
   @override
   Widget build(BuildContext context) {
-    test1() {
+
+    alive() {
       debugPrint("生まれたよ");
+      context.push('/buttle');
     }
 
     return Scaffold(
@@ -36,7 +41,7 @@ class _StartState extends State<Start> {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                onPressed: test1,
+                onPressed: alive,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 34, 93, 67),
               ),
@@ -48,6 +53,8 @@ class _StartState extends State<Start> {
     );
   }
 }
+
+
 
 /*Stack(
               children: [

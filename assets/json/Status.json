@@ -1,0 +1,13 @@
+{
+    "UserStatus":{
+        "HP" : 40,
+        "MP" : 10,
+        "money": 20
+    },
+
+    "CPUStatus":{
+        "HP" : 40,
+        "MP" : 10,
+        "money": 20
+    }
+}
