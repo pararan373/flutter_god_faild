@@ -1,0 +1,9 @@
+{
+    "id"     :1,
+    "name"   :"ハチェット",
+    "type"   :"buki",
+    "value"  :4,
+    "money"  :2,
+    "rarity" :1,
+    "picture":"xxx"
+}

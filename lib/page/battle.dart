@@ -1,7 +1,7 @@
 
 import 'dart:developer';
 import 'dart:html';
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
@@ -32,10 +32,12 @@ class battle extends StatelessWidget {
         debugPrint(randomID.toString());
         handCardIDs.add(randomID);
     }
-
+    
     
     for(var feild = 0;feild < 100; feild ++){
 
     }
   }
+
+
 

@@ -1,14 +1,21 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_application_1/page/battle.dart';
+import 'package:flutter_application_1/page/hachet.dart';
 import 'page/start.dart';
 import 'package:go_router/go_router.dart';
+
 void main() {
   
   //　一旦おまじないとしてスルーしてもらって大丈夫です
   WidgetsFlutterBinding.ensureInitialized();
   //これによってFlutterプロジェクトを起動する
   runApp(const MyApp());
+  test2();
+
 }
+
 final router = GoRouter(
   initialLocation: '/start',
 
@@ -36,3 +43,16 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+ Future<void> test2() async{
+    //jsonを使えるようにする
+  WidgetsFlutterBinding.ensureInitialized();
+  //jsonからとりだす
+  final json = await rootBundle.loadString('json/hachet.json');
+  //jsonmap <== json
+  final map = jsonDecode(json);
+  //data <== jsonmap
+  final data = Hachet.fromJson(map);
+  //中身確認
+  debugPrint('$data');
+ }
