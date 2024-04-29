@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_application_1/page/Detail.dart';
 import 'package:flutter_application_1/page/battle.dart';
-import 'package:flutter_application_1/page/hachet.dart';
 import 'page/start.dart';
 import 'package:go_router/go_router.dart';
 
@@ -48,11 +48,11 @@ class MyApp extends StatelessWidget {
     //jsonを使えるようにする
   WidgetsFlutterBinding.ensureInitialized();
   //jsonからとりだす
-  final json = await rootBundle.loadString('json/hachet.json');
+  final json = await rootBundle.loadString('json/detail.json');
   //jsonmap <== json
   final map = jsonDecode(json);
   //data <== jsonmap
-  final data = Hachet.fromJson(map);
+  final data = Detail.fromJson(map);
   //中身確認
   debugPrint('$data');
  }

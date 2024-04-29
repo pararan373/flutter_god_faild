@@ -173,7 +173,7 @@ class __$$DetailImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$DetailImpl implements _Detail {
+class _$DetailImpl with DiagnosticableTreeMixin implements _Detail {
   const _$DetailImpl(
       {required this.id,
       required this.name,
@@ -202,8 +202,22 @@ class _$DetailImpl implements _Detail {
   final String picture;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'Detail(id: $id, name: $name, type: $type, value: $value, money: $money, rarity: $rarity, picture: $picture)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'Detail'))
+      ..add(DiagnosticsProperty('id', id))
+      ..add(DiagnosticsProperty('name', name))
+      ..add(DiagnosticsProperty('type', type))
+      ..add(DiagnosticsProperty('value', value))
+      ..add(DiagnosticsProperty('money', money))
+      ..add(DiagnosticsProperty('rarity', rarity))
+      ..add(DiagnosticsProperty('picture', picture));
   }
 
   @override
