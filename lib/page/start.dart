@@ -3,7 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/main.dart';
-import 'package:flutter_application_1/page/buttle.dart';
+import 'package:flutter_application_1/page/battle.dart';
 import 'package:go_router/go_router.dart';
 
 class Start extends StatefulWidget {
@@ -44,8 +44,9 @@ class _StartState extends State<Start> {
                 onPressed: alive,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 34, 93, 67),
-              ),
-                child: const Text("誕生する", style: TextStyle(color: Colors.white))),
+                  ),
+                child: const Text("誕生する", style: TextStyle(color: Colors.white))
+                ),
             ]
           ),
         ),
