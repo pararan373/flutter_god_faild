@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class buttle extends StatelessWidget {
-  const buttle({super.key});
+class Buttle extends StatelessWidget {
+  const Buttle({super.key});
 
   @override
   Widget build(BuildContext context) {
