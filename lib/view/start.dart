@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/main.dart';
-import 'package:flutter_application_1/page/battle.dart';
+import 'package:flutter_application_1/view/battle.dart';
 import 'package:flutter_application_1/components/header_button.dart';
 import 'package:go_router/go_router.dart';
 
