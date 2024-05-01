@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/page/battle.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_application_1/page/id.dart';
+import 'package:flutter_application_1/CardEffect/card.dart';
 import 'page/start.dart';
 import 'package:go_router/go_router.dart';
 
@@ -45,11 +45,11 @@ void test1() async {
   //stubを使えるようにする
   WidgetsFlutterBinding.ensureInitialized();
   //Json <--- Stub
-  final json = await rootBundle.loadString('stub/id.json');
+  final json = await rootBundle.loadString('stub/card.json');
   //JsonMap <--- Json
   final map = jsonDecode(json);
   //data <--- JsonMap
-  final data = Id.fromJson(map);
+  final data = Item.fromJson(map);
   //debug
   debugPrint('$data');
 }
