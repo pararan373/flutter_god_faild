@@ -1,5 +1,5 @@
 {
-    "ハチェット":{
+    "Hachet":{
         "id"     :1,
         "name"   :"ハチェット",
         "type"   :"buki",
@@ -8,13 +8,13 @@
         "rarity" :1
         },
         
-    "ゴーストソード":{
+    "GhostSword":{
         "id"     :2,
         "name"   :"ゴーストソード",
         "type"   :"buki",
-        "subtype":"takeHP",
         "value"  :7,
-        "money"  :1
+        "money"  :1,
+        "rarity" :1
         }
 
  }
