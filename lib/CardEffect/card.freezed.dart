@@ -21,7 +21,7 @@ Item _$ItemFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Item {
   Id get Hachet => throw _privateConstructorUsedError;
-  Id get GoastSode => throw _privateConstructorUsedError;
+  Id get GhostSword => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -33,10 +33,10 @@ abstract class $ItemCopyWith<$Res> {
   factory $ItemCopyWith(Item value, $Res Function(Item) then) =
       _$ItemCopyWithImpl<$Res, Item>;
   @useResult
-  $Res call({Id Hachet, Id GoastSode});
+  $Res call({Id Hachet, Id GhostSword});
 
   $IdCopyWith<$Res> get Hachet;
-  $IdCopyWith<$Res> get GoastSode;
+  $IdCopyWith<$Res> get GhostSword;
 }
 
 /// @nodoc
@@ -53,16 +53,16 @@ class _$ItemCopyWithImpl<$Res, $Val extends Item>
   @override
   $Res call({
     Object? Hachet = null,
-    Object? GoastSode = null,
+    Object? GhostSword = null,
   }) {
     return _then(_value.copyWith(
       Hachet: null == Hachet
           ? _value.Hachet
           : Hachet // ignore: cast_nullable_to_non_nullable
               as Id,
-      GoastSode: null == GoastSode
-          ? _value.GoastSode
-          : GoastSode // ignore: cast_nullable_to_non_nullable
+      GhostSword: null == GhostSword
+          ? _value.GhostSword
+          : GhostSword // ignore: cast_nullable_to_non_nullable
               as Id,
     ) as $Val);
   }
@@ -77,9 +77,9 @@ class _$ItemCopyWithImpl<$Res, $Val extends Item>
 
   @override
   @pragma('vm:prefer-inline')
-  $IdCopyWith<$Res> get GoastSode {
-    return $IdCopyWith<$Res>(_value.GoastSode, (value) {
-      return _then(_value.copyWith(GoastSode: value) as $Val);
+  $IdCopyWith<$Res> get GhostSword {
+    return $IdCopyWith<$Res>(_value.GhostSword, (value) {
+      return _then(_value.copyWith(GhostSword: value) as $Val);
     });
   }
 }
@@ -91,12 +91,12 @@ abstract class _$$ItemImplCopyWith<$Res> implements $ItemCopyWith<$Res> {
       __$$ItemImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({Id Hachet, Id GoastSode});
+  $Res call({Id Hachet, Id GhostSword});
 
   @override
   $IdCopyWith<$Res> get Hachet;
   @override
-  $IdCopyWith<$Res> get GoastSode;
+  $IdCopyWith<$Res> get GhostSword;
 }
 
 /// @nodoc
@@ -110,16 +110,16 @@ class __$$ItemImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? Hachet = null,
-    Object? GoastSode = null,
+    Object? GhostSword = null,
   }) {
     return _then(_$ItemImpl(
       Hachet: null == Hachet
           ? _value.Hachet
           : Hachet // ignore: cast_nullable_to_non_nullable
               as Id,
-      GoastSode: null == GoastSode
-          ? _value.GoastSode
-          : GoastSode // ignore: cast_nullable_to_non_nullable
+      GhostSword: null == GhostSword
+          ? _value.GhostSword
+          : GhostSword // ignore: cast_nullable_to_non_nullable
               as Id,
     ));
   }
@@ -128,7 +128,7 @@ class __$$ItemImplCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$ItemImpl with DiagnosticableTreeMixin implements _Item {
-  const _$ItemImpl({required this.Hachet, required this.GoastSode});
+  const _$ItemImpl({required this.Hachet, required this.GhostSword});
 
   factory _$ItemImpl.fromJson(Map<String, dynamic> json) =>
       _$$ItemImplFromJson(json);
@@ -136,11 +136,11 @@ class _$ItemImpl with DiagnosticableTreeMixin implements _Item {
   @override
   final Id Hachet;
   @override
-  final Id GoastSode;
+  final Id GhostSword;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'Item(Hachet: $Hachet, GoastSode: $GoastSode)';
+    return 'Item(Hachet: $Hachet, GhostSword: $GhostSword)';
   }
 
   @override
@@ -149,7 +149,7 @@ class _$ItemImpl with DiagnosticableTreeMixin implements _Item {
     properties
       ..add(DiagnosticsProperty('type', 'Item'))
       ..add(DiagnosticsProperty('Hachet', Hachet))
-      ..add(DiagnosticsProperty('GoastSode', GoastSode));
+      ..add(DiagnosticsProperty('GhostSword', GhostSword));
   }
 
   @override
@@ -158,13 +158,13 @@ class _$ItemImpl with DiagnosticableTreeMixin implements _Item {
         (other.runtimeType == runtimeType &&
             other is _$ItemImpl &&
             (identical(other.Hachet, Hachet) || other.Hachet == Hachet) &&
-            (identical(other.GoastSode, GoastSode) ||
-                other.GoastSode == GoastSode));
+            (identical(other.GhostSword, GhostSword) ||
+                other.GhostSword == GhostSword));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, Hachet, GoastSode);
+  int get hashCode => Object.hash(runtimeType, Hachet, GhostSword);
 
   @JsonKey(ignore: true)
   @override
@@ -181,7 +181,7 @@ class _$ItemImpl with DiagnosticableTreeMixin implements _Item {
 }
 
 abstract class _Item implements Item {
-  const factory _Item({required final Id Hachet, required final Id GoastSode}) =
+  const factory _Item({required final Id Hachet, required final Id GhostSword}) =
       _$ItemImpl;
 
   factory _Item.fromJson(Map<String, dynamic> json) = _$ItemImpl.fromJson;
@@ -189,7 +189,7 @@ abstract class _Item implements Item {
   @override
   Id get Hachet;
   @override
-  Id get GoastSode;
+  Id get GhostSword;
   @override
   @JsonKey(ignore: true)
   _$$ItemImplCopyWith<_$ItemImpl> get copyWith =>
