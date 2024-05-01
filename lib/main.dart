@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_application_1/page/battle.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/CardEffect/card.dart';
@@ -50,6 +52,6 @@ void test1() async {
   final map = jsonDecode(json);
   //data <--- JsonMap
   final data = Item.fromJson(map);
-  //debug
-  debugPrint('$data');
+  final hachet_name = data.Hachet.name;
+  debugPrint('$hachet_name');
 }
