@@ -6,6 +6,7 @@ class ModalContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //ScaffoldをSafeAreaに変更してbug修正
     return SafeArea(
       child: Container(
         height: MediaQuery.of(context).size.height,
