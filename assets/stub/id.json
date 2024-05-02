@@ -1,7 +1,7 @@
 {
     "id"     :0,
     "name"   :"（例）サーベル",
-    "type"   :"buki",
+    "type"   :"weapon",
     "value"  :1,
     "money"  :2,
     "rarity" :1
