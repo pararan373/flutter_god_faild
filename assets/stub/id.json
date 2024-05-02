@@ -1,8 +1,8 @@
 {
-    "id"     :1,
-    "name"   :"ハチェット",
+    "id"     :0,
+    "name"   :"（例）サーベル",
     "type"   :"buki",
-    "value"  :4,
+    "value"  :1,
     "money"  :2,
     "rarity" :1
 }
