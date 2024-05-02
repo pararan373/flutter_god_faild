@@ -5,11 +5,18 @@ import 'package:flutter/services.dart';
 import 'package:flutter_application_1/card/model/weapon/weapon.dart';
 import 'view/start.dart';
 import 'package:go_router/go_router.dart';
-
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase/firebase_options.dart';
+void main() async{
   //　一旦おまじないとしてスルーしてもらって大丈夫です
   WidgetsFlutterBinding.ensureInitialized();
   //これによってFlutterプロジェクトを起動する
+
+  //FireBase用の処理
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(const MyApp());
   test1();
 }
