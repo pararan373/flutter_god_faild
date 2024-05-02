@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'card.dart';
+part of 'weapon.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -181,14 +181,13 @@ class _$ItemImpl with DiagnosticableTreeMixin implements _Item {
 }
 
 abstract class _Item implements Item {
-  const factory _Item({required final Id Hachet, required final Id GhostSword}) =
-      _$ItemImpl;
+  const factory _Item(
+      {required final Id Hachet, required final Id GhostSword}) = _$ItemImpl;
 
   factory _Item.fromJson(Map<String, dynamic> json) = _$ItemImpl.fromJson;
 
   @override
   Id get Hachet;
-  
   @override
   Id get GhostSword;
   @override
