@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/page/battle.dart';
+import 'package:flutter_application_1/view/battle.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_application_1/CardEffect/card.dart';
-import 'page/start.dart';
+import 'package:flutter_application_1/card/model/card.dart';
+import 'view/start.dart';
 import 'package:go_router/go_router.dart';
 
 void main() {
