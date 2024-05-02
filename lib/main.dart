@@ -12,8 +12,7 @@ void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   //これによってFlutterプロジェクトを起動する
 
-  //FireBse用の処理
-  WidgetsFlutterBinding.ensureInitialized();
+  //FireBase用の処理
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
