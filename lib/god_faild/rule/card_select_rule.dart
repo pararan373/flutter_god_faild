@@ -24,7 +24,7 @@ class OffenceHandCard {
 
     //手札のカードを一枚ずつ取り出して、選択可能なカードか判定
     for (OffenceHandCard card in cards) {
-      if (card.type == targetType && !card.isDisabled) {
+      if (card.type != CardType.armor && !card.isDisabled) {
         //選択可能なカードリストに追加
         selectableCards.add(card);
       }
