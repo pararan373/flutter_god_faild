@@ -9,8 +9,9 @@ import 'package:go_router/go_router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase/firebase_options.dart';
 import 'god_faild/action/draw_card.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-void main() async{
+void main() async {
   //　一旦おまじないとしてスルーしてもらって大丈夫です
   WidgetsFlutterBinding.ensureInitialized();
   //これによってFlutterプロジェクトを起動する
@@ -21,7 +22,11 @@ void main() async{
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const MyApp());
+  runApp(
+    const ProviderScope(
+      child: MyApp(),
+    ),
+  );
   json_test();
   firestoretest();
   draw();
@@ -74,5 +79,3 @@ void firestoretest() async {
   service.update();
   //service.delete();
 }
-
-
