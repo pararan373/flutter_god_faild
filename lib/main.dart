@@ -8,6 +8,7 @@ import 'view/start.dart';
 import 'package:go_router/go_router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase/firebase_options.dart';
+import 'god_faild/action/draw_card.dart';
 
 void main() async{
   //　一旦おまじないとしてスルーしてもらって大丈夫です
@@ -23,6 +24,7 @@ void main() async{
   runApp(const MyApp());
   json_test();
   firestoretest();
+  draw();
 }
 
 final router = GoRouter(
