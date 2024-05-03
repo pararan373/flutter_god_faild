@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/view/battle.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_application_1/card/model/weapon/weapon.dart';
+import 'package:flutter_application_1/model/card/weapon/weapon.dart';
 import 'view/start.dart';
 import 'package:go_router/go_router.dart';
 import 'package:firebase_core/firebase_core.dart';
