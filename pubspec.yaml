@@ -29,8 +29,9 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   freezed_annotation: ^2.4.1
-  firebase_core:
+  firebase_core: ^2.30.1
   firebase_analytics:
+  cloud_firestore:
   go_router: ^14.0.1
   flutter:
     sdk: flutter
