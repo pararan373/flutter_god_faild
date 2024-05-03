@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/firebase/status_crud.dart';
 import 'package:flutter_application_1/view/battle.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/card/model/weapon/weapon.dart';
@@ -7,19 +8,21 @@ import 'view/start.dart';
 import 'package:go_router/go_router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase/firebase_options.dart';
+
 void main() async{
   //　一旦おまじないとしてスルーしてもらって大丈夫です
   WidgetsFlutterBinding.ensureInitialized();
   //これによってFlutterプロジェクトを起動する
 
-  //FireBse用の処理
+  //FireBase用の処理
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
   runApp(const MyApp());
-  test1();
+  json_test();
+  firestoretest();
 }
 
 final router = GoRouter(
@@ -49,7 +52,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-void test1() async {
+void json_test() async {
   //stubを使えるようにする
   WidgetsFlutterBinding.ensureInitialized();
   //Json <--- Stub
@@ -57,7 +60,17 @@ void test1() async {
   //JsonMap <--- Json
   final map = jsonDecode(json);
   //data <--- JsonMap
-  final data = Item.fromJson(map);
+  final data = Item.fromJson(map).Hachet.value;
   //debug
   debugPrint('$data');
 }
+
+void firestoretest() async {
+  final service = FirestoreService();
+  service.create();
+  service.read();
+  service.update();
+  //service.delete();
+}
+
+
