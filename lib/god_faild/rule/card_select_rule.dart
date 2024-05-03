@@ -5,14 +5,14 @@ enum CardType { goods, weapon, trade, armor }
 class OffenceHandCard {
   final int id;
   final CardType type;
-  bool isSelexted; //カードが選択されているか
+  bool isSelected; //カードが選択されているか
   bool isDisabled; //カードが無効化されているか
 
   //コンストラクタ
   OffenceHandCard({
     required this.id,
     required this.type,
-    this.isSelexted = false,
+    this.isSelected = false,
     this.isDisabled = false,
   });
 
