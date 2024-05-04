@@ -24,22 +24,22 @@ void returnCardToHand(BuildContext context, OffenceHandCard card, WidgetRef ref)
   card.isSelected = false;
 }
 
-void selectDefenceCard(BuildContext context, DefenceHandCard card, WidgetRef ref) {
+void selectDefenseCard(BuildContext context, DefenseHandCard card, WidgetRef ref) {
   // カードを選択
-  final selectCardNotifier = ref.read(selectedDefenceCardProvider.notifier);
+  final selectCardNotifier = ref.read(selectedDefenseCardProvider.notifier);
   selectCardNotifier.state = card;
 
   // 選択したカードをRiverに追加
-  final riverNotifier = ref.read(defenceRiverProvider.notifier);
+  final riverNotifier = ref.read(defenseRiverProvider.notifier);
   riverNotifier.state.add(card);
 }
 
-final selectedDefenceCardProvider = StateProvider<DefenceHandCard?>((ref) => null);
-final defenceRiverProvider = StateProvider<List<DefenceHandCard>>((ref) => []);
+final selectedDefenseCardProvider = StateProvider<DefenseHandCard?>((ref) => null);
+final defenseRiverProvider = StateProvider<List<DefenseHandCard>>((ref) => []);
 
-void returnDefenceCardToHand(BuildContext context, DefenceHandCard card, WidgetRef ref) {
+void returnDefenseCardToHand(BuildContext context, DefenseHandCard card, WidgetRef ref) {
   // Riverからカードを削除
-  final riverNotifier = ref.read(defenceRiverProvider.notifier);
+  final riverNotifier = ref.read(defenseRiverProvider.notifier);
   riverNotifier.state.remove(card);
 
   // カードの選択を解除

@@ -36,14 +36,14 @@ class OffenceHandCard {
 }
 
 //カードクラス(仮)
-class DefenceHandCard {
+class DefenseHandCard {
   final int id;
   final CardType type;
   bool isSelected; //カードが選択されているか
   bool isDisabled; //カードが無効化されているか
 
   //コンストラクタ
-  DefenceHandCard({
+  DefenseHandCard({
     required this.id,
     required this.type,
     this.isSelected = false,
@@ -51,12 +51,12 @@ class DefenceHandCard {
   });
 
   //カードの選択状態を切り替える
-  List<DefenceHandCard> getSelectableCards(List<DefenceHandCard> cards) {
+  List<DefenseHandCard> getSelectableCards(List<DefenseHandCard> cards) {
     //選択可能なカードのリストを初期化
-    List<DefenceHandCard> selectableCards = [];
+    List<DefenseHandCard> selectableCards = [];
 
     //手札のカードを一枚ずつ取り出して、選択可能なカードか判定
-    for (DefenceHandCard card in cards) {
+    for (DefenseHandCard card in cards) {
       if (card.type == CardType.armor && !card.isDisabled) {
         //選択可能なカードリストに追加
         selectableCards.add(card);
