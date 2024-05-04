@@ -2,14 +2,14 @@
 enum CardType { goods, weapon, trade, armor }
 
 //カードクラス(仮)
-class OffenceHandCard {
+class OffenseHandCard {
   final int id;
   final CardType type;
   bool isSelected; //カードが選択されているか
   bool isDisabled; //カードが無効化されているか
 
   //コンストラクタ
-  OffenceHandCard({
+  OffenseHandCard({
     required this.id,
     required this.type,
     this.isSelected = false,
@@ -17,13 +17,13 @@ class OffenceHandCard {
   });
 
   //カードの選択状態を切り替える
-  List<OffenceHandCard> getSelectableCards(
-      List<OffenceHandCard> cards, CardType targetType) {
+  List<OffenseHandCard> getSelectableCards(
+      List<OffenseHandCard> cards, CardType targetType) {
     //選択可能なカードのリストを初期化
-    List<OffenceHandCard> selectableCards = [];
+    List<OffenseHandCard> selectableCards = [];
 
     //手札のカードを一枚ずつ取り出して、選択可能なカードか判定
-    for (OffenceHandCard card in cards) {
+    for (OffenseHandCard card in cards) {
       if (card.type != CardType.armor && !card.isDisabled) {
         //選択可能なカードリストに追加
         selectableCards.add(card);

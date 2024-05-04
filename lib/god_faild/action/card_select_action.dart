@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_application_1/god_faild/rule/card_select_rule.dart';
 
-final selectedCardProvider = StateProvider<OffenceHandCard?>((ref) => null);
-final riverProvider = StateProvider<List<OffenceHandCard>>((ref) => []);
+final selectedCardProvider = StateProvider<OffenseHandCard?>((ref) => null);
+final riverProvider = StateProvider<List<OffenseHandCard>>((ref) => []);
 
-void selectCard(BuildContext context, OffenceHandCard card, WidgetRef ref) {
+void selectCard(BuildContext context, OffenseHandCard card, WidgetRef ref) {
   // カードを選択
   final selectCardNotifier = ref.read(selectedCardProvider.notifier);
   selectCardNotifier.state = card;
@@ -15,7 +15,7 @@ void selectCard(BuildContext context, OffenceHandCard card, WidgetRef ref) {
   riverNotifier.state.add(card);
 }
 
-void returnCardToHand(BuildContext context, OffenceHandCard card, WidgetRef ref) {
+void returnCardToHand(BuildContext context, OffenseHandCard card, WidgetRef ref) {
   // Riverからカードを削除
   final riverNotifier = ref.read(riverProvider.notifier);
   riverNotifier.state.remove(card);
