@@ -1,0 +1,198 @@
+{
+    "S01":{
+        "name":"copper club",
+        "value":1,
+        "money":1,
+        "subtype":"nomal",
+        "rarity":1
+    },
+        
+    "S02":{
+        "name":"silver club",
+        "value":1,
+        "money":10,
+        "subtype":"nomal",
+        "rarity":1
+        },
+    
+    "S03":{
+        "name":"golden club",
+        "value":1,
+        "money":25,
+        "subtype":"nomal",
+        "rarity":1            
+    },
+
+    "S04":{
+        "name":"blowgun",
+        "value":1,
+        "money":1,
+        "subtype":"plus",
+        "rarity":1           
+    },
+
+    "S05":{
+        "name":"whip",
+        "value":2,
+        "money":1,
+        "subtype":"nomal",
+        "rarity":1           
+    },
+
+    "S06":{
+        "name":"saber lot",
+        "value":2,
+        "money":10,
+        "subtype":"nomal",
+        "rarity":1          
+    },
+
+    "S07":{
+        "name":"crossbow",
+        "value":2,
+        "money":2,
+        "subtype":"plus",
+        "rarity":1            
+    },
+
+    "S08":{
+        "name":"punch",
+        "value":3,
+        "money":1,
+        "subtype":"nomal",
+        "rarity":1            
+    },
+
+    "S09":{
+        "name":"boomerang",
+        "value":3,
+        "money":3,
+        "subtype":"plus",
+        "rarity":1           
+    },
+
+    "S10":{
+        "name":"hacthet",
+        "value":4,
+        "money":2,
+        "subtype":"nomal",
+        "rarity":1            
+    },
+    
+    "S11":{
+        "name":"throrn belt",
+        "value":4,
+        "money":3,
+        "subtype":"nomal",
+        "rarity":1            
+    },
+
+    "S12":{
+        "name":"battle ball",
+        "value":4,
+        "money":4,
+        "subtype":"plus",
+        "rarity":1            
+    },
+
+    "S13":{
+        "name":"kusarigama",
+        "value":5,
+        "money":2,
+        "subtype":"nomal",
+        "rarity":1            
+    },
+
+    "S14":{
+        "name":"battle ball",
+        "value":4,
+        "money":4,
+        "subtype":"plus",
+        "rarity":1           
+    },
+
+    "S15":{
+        "name":"blow iron plate",
+        "value":5,
+        "money":3,
+        "subtype":"nomal",
+        "rarity":11            
+    },    
+    
+    "S16":{
+        "name":"battle ball",
+        "value":4,
+        "money":4,
+        "subtype":"plus",
+        "r,arity":1           
+    },
+
+    "S17":{
+        "name":"warrior bow",
+        "value":5,
+        "money":5,
+        "subtype":"plus",
+        "rarity":1           
+    },
+
+    "S18":{
+        "name":"hard mallet",
+        "value":6,
+        "money":2,
+        "subtype":"nomal",
+        "rarity":1            
+    },
+
+    "S19":{
+        "name":"jet yoyo",
+        "value":6,
+        "money":6,
+        "subtype":"plus",
+        "rarity":1          
+    },
+
+    "S20":{
+        "name":"naginata classic",
+        "value":7,
+        "money":3,
+        "subtype":"nomal",
+        "rarity":1           
+    },
+
+    "S21":{
+        "name":"ghost sword",
+        "value":7,
+        "money":10,
+        "subtype":"takeHP",
+        "rarity":1           
+    },
+
+    "S22":{
+        "name":"unknown feather",
+        "value":7,
+        "money":7,
+        "subtype":"plius",
+        "rarity":1           
+    },
+    "S23":{
+        "name":"final fang",
+        "value":8,
+        "money":3,
+        "subtype":"nomal",
+        "rarity":1          
+    },
+    "S24":{
+        "name":"psychic card",
+        "value":8,
+        "money":8,
+        "subtype":"nomal",
+        "rarity":1
+    },
+    "S25":{
+        "name":"power hull belt",
+        "value":9,
+        "money":3,
+        "subtype":"nomal",
+        "rarity":1           
+    }   
+}
