@@ -1,0 +1,17 @@
+{
+    "S01":{
+        "name":"example armor",
+        "value":1,
+        "money":1,
+        "subtype":"nomal",
+        "rarity":1
+    },
+        
+    "S02":{
+        "name":"silver club",
+        "value":1,
+        "money":10,
+        "subtype":"nomal",
+        "rarity":1
+        }
+    }
