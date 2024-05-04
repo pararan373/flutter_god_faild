@@ -8,7 +8,6 @@ import 'view/start.dart';
 import 'package:go_router/go_router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase/firebase_options.dart';
-import 'god_faild/action/draw_card.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '/god_faild/god_faild.dart';
 
@@ -30,8 +29,6 @@ void main() async {
   );
   json_test();
   firestoretest();
-  draw();
-  genre_shuffle();
 
 }
 
