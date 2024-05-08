@@ -4,7 +4,8 @@
         "value":1,
         "money":1,
         "subtype":"nomal",
-        "rarity":1
+        "rarity":1,
+        "id":1
     },
         
     "S02":{
@@ -12,7 +13,8 @@
         "value":1,
         "money":10,
         "subtype":"nomal",
-        "rarity":1
+        "rarity":1,
+        "id":2
         },
     
     "S03":{
@@ -20,7 +22,8 @@
         "value":1,
         "money":25,
         "subtype":"nomal",
-        "rarity":1            
+        "rarity":1,
+        "id":3            
     },
 
     "S04":{
@@ -28,7 +31,8 @@
         "value":1,
         "money":1,
         "subtype":"plus",
-        "rarity":1           
+        "rarity":1,
+        "id":4           
     },
 
     "S05":{
@@ -36,7 +40,8 @@
         "value":2,
         "money":1,
         "subtype":"nomal",
-        "rarity":1           
+        "rarity":1,
+        "id":5           
     },
 
     "S06":{
@@ -44,7 +49,8 @@
         "value":2,
         "money":10,
         "subtype":"nomal",
-        "rarity":1          
+        "rarity":1,
+        "id":6          
     },
 
     "S07":{
@@ -52,7 +58,8 @@
         "value":2,
         "money":2,
         "subtype":"plus",
-        "rarity":1            
+        "rarity":1,
+        "id":7            
     },
 
     "S08":{
@@ -60,7 +67,8 @@
         "value":3,
         "money":1,
         "subtype":"nomal",
-        "rarity":1            
+        "rarity":1,
+        "id":8            
     },
 
     "S09":{
@@ -68,7 +76,8 @@
         "value":3,
         "money":3,
         "subtype":"plus",
-        "rarity":1           
+        "rarity":1,
+        "id":9           
     },
 
     "S10":{
@@ -76,7 +85,8 @@
         "value":4,
         "money":2,
         "subtype":"nomal",
-        "rarity":1            
+        "rarity":1,
+        "id":10            
     },
     
     "S11":{
@@ -84,7 +94,8 @@
         "value":4,
         "money":3,
         "subtype":"nomal",
-        "rarity":1            
+        "rarity":1,
+        "id":11            
     },
 
     "S12":{
@@ -92,7 +103,8 @@
         "value":4,
         "money":4,
         "subtype":"plus",
-        "rarity":1            
+        "rarity":1,
+        "id":12            
     },
 
     "S13":{
@@ -100,7 +112,8 @@
         "value":5,
         "money":2,
         "subtype":"nomal",
-        "rarity":1            
+        "rarity":1,
+        "id":13            
     },
 
     "S14":{
@@ -108,7 +121,8 @@
         "value":4,
         "money":4,
         "subtype":"plus",
-        "rarity":1           
+        "rarity":1,
+        "id":14           
     },
 
     "S15":{
@@ -116,7 +130,8 @@
         "value":5,
         "money":3,
         "subtype":"nomal",
-        "rarity":11            
+        "rarity":1,
+        "id":15            
     },    
     
     "S16":{
@@ -124,7 +139,8 @@
         "value":4,
         "money":4,
         "subtype":"plus",
-        "r,arity":1           
+        "rarity":1,
+        "id":16           
     },
 
     "S17":{
@@ -132,7 +148,8 @@
         "value":5,
         "money":5,
         "subtype":"plus",
-        "rarity":1           
+        "rarity":1,
+        "id":17           
     },
 
     "S18":{
@@ -140,7 +157,8 @@
         "value":6,
         "money":2,
         "subtype":"nomal",
-        "rarity":1            
+        "rarity":1,
+        "id":18            
     },
 
     "S19":{
@@ -148,7 +166,8 @@
         "value":6,
         "money":6,
         "subtype":"plus",
-        "rarity":1          
+        "rarity":1,
+        "id":19          
     },
 
     "S20":{
@@ -156,7 +175,8 @@
         "value":7,
         "money":3,
         "subtype":"nomal",
-        "rarity":1           
+        "rarity":1,
+        "id":20           
     },
 
     "S21":{
@@ -164,7 +184,8 @@
         "value":7,
         "money":10,
         "subtype":"takeHP",
-        "rarity":1           
+        "rarity":1,
+        "id":21           
     },
 
     "S22":{
@@ -172,27 +193,31 @@
         "value":7,
         "money":7,
         "subtype":"plius",
-        "rarity":1           
+        "rarity":1,
+        "id":22           
     },
     "S23":{
         "name":"final fang",
         "value":8,
         "money":3,
         "subtype":"nomal",
-        "rarity":1          
+        "rarity":1,
+        "id":23          
     },
     "S24":{
         "name":"psychic card",
         "value":8,
         "money":8,
         "subtype":"nomal",
-        "rarity":1
+        "rarity":1,
+        "id":24
     },
     "S25":{
         "name":"power hull belt",
         "value":9,
         "money":3,
         "subtype":"nomal",
-        "rarity":1           
+        "rarity":1,
+        "id":25           
     }   
 }
