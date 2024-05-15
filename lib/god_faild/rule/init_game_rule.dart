@@ -36,9 +36,9 @@ class InitGameRule {
 
   void initCurrentPlayer(WidgetRef ref) {
     final currentPlayerNotifier = ref.read(currentPlayerNotifierProvider.notifier);
-    final currentPlayer = ref.read(currentPlayerNotifierProvider);
+    var currentPlayer = ref.read(currentPlayerNotifierProvider);
 
-    currentPlayerNotifier.state = 'player';
+    currentPlayer = 'player';
     debugPrint(currentPlayer);
   }
 

@@ -1,8 +1,7 @@
 import 'dart:math';
 
 String draw() {
-  int x = 30;
-  final dice = {"weapon": 60, "armor": 30, "goods": 10, "trade": x};
+  final dice = {"weapon": 60, "armor": 30, "goods": 10, "trade": 30};
   String lottery;
 
   final sum = dice.values.reduce((value, element) => value + element);
@@ -14,6 +13,7 @@ String draw() {
     if (cumlativeSum >= rand) {
       print('${entry.key}がでた。');
       lottery = entry.key;
+      return lottery;
 
       break;
     }
